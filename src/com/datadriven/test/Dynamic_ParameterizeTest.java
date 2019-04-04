@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.excel.utility.Xls_Reader;
@@ -15,7 +16,9 @@ public class Dynamic_ParameterizeTest
 	{
 		
 		// Launch WebDriver
-		WebDriver d = new FirefoxDriver();
+		//WebDriver d = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\drivers\\ChromeDriver.exe");
+		ChromeDriver d = new ChromeDriver();
 		d.manage().window().maximize();
 		d.manage().deleteAllCookies();
 		d.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);

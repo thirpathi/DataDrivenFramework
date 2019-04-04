@@ -7,7 +7,6 @@
         <methods>
           <include name="halfEbayRegPageTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.datadriven.test.HalfEbayTest -->
     </classes>
